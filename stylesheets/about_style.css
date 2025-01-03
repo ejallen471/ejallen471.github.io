@@ -1,0 +1,200 @@
+/* ################# Global reset and font ################# */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Palatino', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif; 
+}
+
+/* ################# Header ################# */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: large;
+    text-align: center; 
+}
+
+/* ################# Navigation styles ################# */
+nav ul {
+    text-align: center;
+    list-style-type: none;
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative; 
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px; 
+    left: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: #fff; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1); 
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* ################# Section, paragraphs, and titles ################# */
+section {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+section#aboutText {
+    text-align: center; 
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+section#aboutText p {
+    color: #333;
+    font-size: larger;
+    position: relative; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section#aboutText p a {
+    color: #333;
+    text-decoration: none; 
+    position: relative; 
+}
+
+
+section#aboutText p a::after {
+    content: ''; 
+    position: absolute; 
+    bottom: -3px; 
+    left: 0; 
+    width: 100%; 
+    height: 2px; 
+    background-color: #333; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+section#aboutText p a:hover::after {
+    transform: scaleX(1); 
+}
+
+/* ################# Banner styles and animation ################# */
+section.banner {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto 20px auto;
+    border: 5px white;
+}
+
+.slideshow {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.slideshow img:nth-child(1) { animation-delay: 0s; }
+.slideshow img:nth-child(2) { animation-delay: 16s; }
+.slideshow img:nth-child(3) { animation-delay: 32s; }
+
+.slideshow img {
+    animation: slide_animation 45s infinite;
+}
+
+@keyframes slide_animation {
+    0% { opacity: 0; }
+    6.67% { opacity: 1; }
+    53.33% { opacity: 1; }
+    60% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* ################# Footer ################# */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border: none;
+}
+
+/* ################# Social links in the footer ################# */
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.social-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover::after {
+    transform: scaleX(1);
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin,
+.fa-github {
+    background: #333;
+    color: white;
+}
+
+
+
