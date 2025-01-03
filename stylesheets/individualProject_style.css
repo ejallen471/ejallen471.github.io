@@ -1,0 +1,240 @@
+/* ################# Global reset and font ################# */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Palatino', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif; 
+}
+
+/* ################# Header styles ################# */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    font-size: large;
+}
+
+
+/* ################# Navigation styles ################# */
+nav ul {
+    text-align: center;
+    list-style-type: none;
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative; 
+    font-size: 20px; /* Increase the font size */
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px; 
+    left: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: #fff; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1); 
+}
+
+/* ################# Body styles ################# */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background-color: #f0f0f0; 
+}
+
+/* ################# Main Content styles ################# 
+.main-content {
+    flex: 1;
+    background-image: url('../../assets/pictures/groversAlgorithm/backgroundProjects.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding-bottom: 50px;
+}
+*/
+
+section#aboutText p a::after {
+    content: ''; 
+    position: absolute; 
+    bottom: -3px; 
+    left: 0; 
+    width: 100%; 
+    height: 2px; 
+    background-color: #333; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+section#aboutText p a:hover::after {
+    transform: scaleX(1); 
+}
+
+/* ################# Banner styles ################# */
+section.banner {
+    width: 100%;
+    height: auto; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.banner img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+}
+
+/* ################# Main Text and paragraphs ################# */
+section.main_text p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 15%;
+    margin-left: 15%;
+    font-size: larger;
+    text-align: center;
+}
+
+section.main_text p a {
+    color: #333;
+    text-decoration: none; 
+    position: relative; 
+}
+
+section.main_text p a::after {
+    content: ''; 
+    position: absolute; 
+    bottom: -3px; 
+    left: 0; 
+    width: 100%; 
+    height: 2px; 
+    background-color: #333; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+section.main_text p a:hover::after {
+    transform: scaleX(1); /* Animate the underline on hover */
+}
+
+/* ################# Embed styles ################# */
+section.pdf embed {
+    width: 80%; 
+    height: 700px; 
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 100%; 
+    text-align: center;
+}
+
+/* ################# Centered List ################# */
+.centered-list ul {
+    margin-top: 5px;
+    list-style: disc;
+    padding-left: 10%; 
+    width: 80%; 
+    margin: auto; 
+}
+
+.centered-list ul li {
+    text-align: left; 
+    margin-bottom: 5vw; 
+    padding-left: 10%; 
+    width: 80%; 
+    margin: auto; 
+}
+
+.centered-list ul ul {
+    list-style: square; 
+    padding-left: 0; 
+}
+
+.centered-list ul ul li {
+    list-style: square; 
+    margin-left: 20px; 
+    margin-bottom: 5px; 
+    margin-top: 5px;
+}
+
+.centered-list p {
+    text-align: center; 
+    margin-top: 10px;
+}
+
+
+
+/* ################# Footer styles ################# */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; /* Responsive padding */
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom of the page */
+    box-sizing: border-box; /* Prevent padding from affecting width */
+}
+
+/* ################# Social Media Links in Footer ################# */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px; /* Add padding to fit design */
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.social-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover::after {
+    transform: scaleX(1);
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin, .fa-github {
+    background: none;
+    color: white;
+}
