@@ -1,3 +1,3 @@
 # Website Code
 
-Link to website - https://ejallen471.github.io/home/
+Link to website - https://ejallen471.github.io
