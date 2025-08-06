@@ -1,0 +1,80 @@
+/* ########## Body Background Override ########## */
+body {
+    background-color: #f0f0f0;
+}
+
+/* ########## Banner Section ########## */
+section.banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ########## Main Paragraph Text ########## */
+section.main_text p {
+    margin: 20px 15%;
+    font-size: larger;
+    text-align: center;
+}
+
+section.main_text p a {
+    color: #333;
+}
+
+/* ########## About Section Links ########## */
+section#aboutText p a {
+    color: #333;
+}
+
+/* ########## Custom Link Underline Coloring (Overrides) ########## */
+section#aboutText p a::after,
+section.main_text p a::after {
+    background-color: #333;
+}
+
+/* ########## Embedded PDF ########## */
+section.pdf embed {
+    width: 80%;
+    height: 700px;
+    margin: 0 10%;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* ########## Centered List Section ########## */
+.centered-list ul {
+    list-style: disc;
+    padding-left: 10%;
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.centered-list ul li {
+    text-align: left;
+    margin-bottom: 5vw;
+    padding-left: 10%;
+    width: 80%;
+    margin: auto;
+}
+
+.centered-list ul ul {
+    list-style: square;
+    padding-left: 0;
+}
+
+.centered-list ul ul li {
+    margin: 5px 0 5px 20px;
+}
+
+.centered-list p {
+    text-align: center;
+    margin-top: 10px;
+}

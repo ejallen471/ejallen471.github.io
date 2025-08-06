@@ -1,0 +1,78 @@
+/* ########## Body Text Section ########## */
+section#homeText {
+    text-align: center;
+    margin: 0 20%;
+}
+
+section#homeText p {
+    color: #333;
+    font-size: larger;
+    margin: 10px 0;
+}
+
+section#homeText p a {
+    color: #333;
+}
+
+/* ########## Custom Underline for Home Text Links ########## */
+section#homeText p a::after {
+    background-color: currentColor;
+}
+
+/* ########## Banner Section ########## */
+section.banner {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    margin: 5px auto;
+    border: 5px solid white;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    transition: transform 0.3s ease;
+}
+
+section.banner:hover {
+    transform: scale(1.05);
+}
+
+/* ########## Banner Links (No Underline) ########## */
+section.banner a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #333;
+    position: static;
+    text-decoration: none;
+}
+
+section.banner a::after {
+    display: none !important;
+}
+
+/* ########## Specific Banner Backgrounds ########## */
+#cvBanner,
+#projectsBanner,
+#aboutBanner {
+    background-size: cover;
+    background-position: center;
+}
+
+#cvBanner {
+    background-image: url('../assets/pictures/mainPages/homePage/cvHomeBanner.png');
+}
+
+#projectsBanner {
+    background-image: url('../assets/pictures/mainPages/homePage/projectsHomeBanner.png');
+}
+
+#aboutBanner {
+    background-image: url('../assets/pictures/mainPages/homePage/aboutHomeBanner.png');
+}
+
