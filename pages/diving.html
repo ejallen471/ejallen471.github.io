@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scuba Diving</title>
+  <link rel="stylesheet" href="../stylesheets/diving_style.css">
+  <link rel="stylesheet" href="../stylesheets/shared_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+    <h1>Scuba Diving</h1>
+  </nav>
+</header>
+
+<section class="banner">
+  <img src="../assets/pictures/mainPages/diving/divingBanner.png" alt="Diving Banner">       
+</section>
+
+<main>
+  <section id="aboutText">
+    <h2>Heylo!!!</h2>
+    <p>
+      Welcome to this secret (ish) page, here is just a little map of places I have dived 
+      and a little gallery of cool things I have seen under the water :)
+    </p>
+  </section>
+
+  <!-- Map Section -->
+  <section id="mapSection">
+    <div id="mapContainer">
+      <div id="diveMap"></div>
+    </div>
+  </section>
+
+  <!-- Gallery Section (inside main, before afterword) -->
+<section id="gallery">
+  <h2>Dive Gallery</h2>
+  <div class="gallery-grid">
+    <!-- Images -->
+    <div class="gallery-item"><img src="../assets/pictures/diving/divingPhotoTwo_Tenerife.jpeg" alt="Dive Photo 1"></div>
+    <div class="gallery-item"><img src="../assets/pictures/diving/divingPhotoFive_Tenerife.jpeg" alt="Dive Photo 2"></div>
+    <div class="gallery-item"><img src="../assets/pictures/diving/divingPhotoThree_Tenerife.jpeg" alt="Dive Photo 3"></div>
+    <!-- <div class="gallery-item"><img src="../assets/pictures/diving/divingPhotoFour_Tenerife.jpeg" alt="Dive Photo 4"></div> -->
+    <div class="gallery-item"><img src="../assets/pictures/diving/divingPhotoSix_Tenerife.jpeg" alt="Dive Photo 6"></div>
+    <div class="gallery-item"><img src="../assets/pictures/diving/divingPhotoSeven_Tenerife.jpeg" alt="Dive Photo 5"></div>
+    <div class="gallery-item"><img src="../assets/pictures/diving/divingPhotoOne_Tenerife.jpeg" alt="Dive Photo 7"></div>
+    <div class="gallery-item"><img src="../assets/pictures/diving/divingPhotoEight_Tenerife.jpeg" alt="Dive Photo 8"></div>
+
+    <!-- Videos (Tenerife + England) -->
+    <div class="gallery-item">
+      <video controls>
+        <source src="../assets/pictures/diving/divingVideoOne_England.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="gallery-item">
+      <video controls>
+        <source src="../assets/pictures/diving/divingVideoOne_Tenerife.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="gallery-item">
+      <video controls>
+        <source src="../assets/pictures/diving/divingVideoTwo_England.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="gallery-item">
+      <video controls>
+        <source src="../assets/pictures/diving/divingVideoTwo_Tenerife.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="gallery-item">
+      <video controls>
+        <source src="../assets/pictures/diving/divingVideoThree_Tenerife.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>    
+    
+  </div>
+</section>
+
+
+  <section id="afterword">
+    <p>Last updated September 2025</p>
+  </section>
+</main>
+
+<footer>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/e-allen/" class="fa fa-linkedin"></a>
+    <a href="https://github.com/ejallen471" class="fa fa-github"></a>
+  </div>
+</footer>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+  // Initialize map
+  var map = L.map('diveMap', {
+    center: [0, 0],
+    zoom: 2
+  });
+
+  // Base tiles (no wrapping so Oceania isn't duplicated)
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+    subdomains: 'abcd',
+    minZoom: 2,
+    maxZoom: 19,
+    noWrap: true
+  }).addTo(map);
+
+  // Dive spots
+  var diveSpots = [
+    {lat: 55.8987, lng: -2.1303, name: "St Abbs Harbour, Scotland"},
+    {lat: 56.0000, lng: -4.8000, name: "A-Frames Dive Site, Scotland"},
+    {lat: 56.0272, lng: -3.3831, name: "Prestonhill Quarry, Scotland"},
+    {lat: 56.7196, lng: -5.2304, name: "Fort William (PH33 6SE), Scotland"},
+    {lat: 56.6804, lng: -5.1327, name: "Carnoch Bay, Scotland"},
+
+    {lat: 54.1371, lng: -2.7232, name: "Capernwray Diving Centre, England"},
+
+    {lat: 28.0650, lng: -16.7340, name: "Las Vistas, Tenerife"},
+    {lat: 28.0803, lng: -16.7350, name: "La Pinta, Tenerife"},
+    {lat: 28.1420, lng: -16.4390, name: "Playa de Abades, Tenerife"},
+    {lat: 28.1891, lng: -16.8230, name: "Fonsalia, Tenerife"},
+    {lat: 28.1801, lng: -16.8130, name: "Playa San Juan, Tenerife"},  
+    {lat: 28.4015, lng: -16.3250, name: "Playa de Radazul, Tenerife"},
+    {lat: 28.4016, lng: -16.3311, name: "Tabaiba, Tenerife"}, 
+    {lat: 28.1390, lng: -16.7910, name: "El Balito, Tenerife"},   
+    {lat: 28.2010, lng: -16.8295, name: "Alcalá, Tenerife"} 
+  ];
+
+
+  // Add markers and collect them
+  var markers = [];
+  diveSpots.forEach(function(spot) {
+    var marker = L.marker([spot.lat, spot.lng]).addTo(map)
+      .bindPopup("<b>" + spot.name + "</b>");
+    markers.push(marker);
+  });
+
+  // Fit map to all markers first
+  var group = L.featureGroup(markers);
+  map.fitBounds(group.getBounds().pad(0.2));
+
+  // THEN restrict dragging (so it doesn't override fitBounds)
+  var bounds = L.latLngBounds([[-85, -180], [85, 180]]);
+  map.setMaxBounds(bounds);
+</script>
+
+</body>
+</html>
+
+
+
