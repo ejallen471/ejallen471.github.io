@@ -1,6 +1,6 @@
 # Personal Website
 
-This repository contains the static files for my personal website.
+This repo contains the files for my website.
 
 The site is available at [ejallen471.github.io](https://ejallen471.github.io).
 
@@ -17,7 +17,7 @@ scripts/diving_map.js  Diving map
 
 ## Editing
 
-Edit the HTML, CSS or JavaScript directly. There is no build step.
+Edit the HTML, CSS or JavaScript directly. 
 
 To preview the site locally, run this command from the repository root.
 
@@ -27,6 +27,4 @@ python3 -m http.server 8000
 
 Open `http://localhost:8000` in a browser.
 
-## Publishing
-
-GitHub Pages serves the static files directly from the repository. Commit and push the edited files to publish them.
+alternatively you can open the `.html` files
