@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title description">
+    <title id="title">Four interests</title>
+    <desc id="description">A mountain, cake, paw print and scuba mask arranged in four coloured squares.</desc>
+
+    <rect width="500" height="500" fill="#f3efe6"/>
+    <rect x="500" width="500" height="500" fill="#81516d"/>
+    <rect y="500" width="500" height="500" fill="#8298a1"/>
+    <rect x="500" y="500" width="500" height="500" fill="#163f3f"/>
+
+    <g aria-label="Mountain" fill="none" stroke="#163f3f" stroke-linecap="round" stroke-linejoin="round" stroke-width="18">
+        <circle cx="378" cy="132" r="43" stroke="#81516d"/>
+        <path d="M62 405 L225 165 L320 302 L382 224 L470 405"/>
+        <path d="M185 224 L211 252 L239 224 L278 241"/>
+        <path d="M345 271 L369 277 L390 257 L419 300"/>
+        <path d="M62 405 H470"/>
+    </g>
+
+    <g aria-label="Cake" fill="none" stroke="#f3efe6" stroke-linecap="round" stroke-linejoin="round" stroke-width="18">
+        <path d="M625 255 Q750 195 875 255 V390 Q750 445 625 390 Z"/>
+        <path d="M625 255 Q750 315 875 255"/>
+        <path d="M625 305 Q658 338 692 305 Q725 338 758 305 Q792 338 825 305 Q850 329 875 305"/>
+        <path d="M590 410 Q750 465 910 410"/>
+        <path d="M750 215 V150"/>
+        <path d="M750 150 C719 126 730 91 750 75 C770 91 781 126 750 150 Z" stroke="#163f3f"/>
+        <circle cx="680" cy="245" r="12" fill="#b784a2" stroke="none"/>
+        <circle cx="820" cy="245" r="12" fill="#b784a2" stroke="none"/>
+    </g>
+
+    <g aria-label="Paw print" fill="none" stroke="#f3efe6" stroke-linecap="round" stroke-linejoin="round" stroke-width="18">
+        <ellipse cx="128" cy="704" rx="42" ry="58" transform="rotate(-24 128 704)"/>
+        <ellipse cx="218" cy="635" rx="42" ry="59" transform="rotate(-8 218 635)"/>
+        <ellipse cx="316" cy="642" rx="42" ry="59" transform="rotate(10 316 642)"/>
+        <ellipse cx="394" cy="718" rx="42" ry="58" transform="rotate(25 394 718)"/>
+        <path d="M250 724 C181 724 136 799 166 860 C190 908 232 878 250 865 C268 878 310 908 334 860 C364 799 319 724 250 724 Z"/>
+    </g>
+
+    <g aria-label="Scuba mask" fill="none" stroke="#f3efe6" stroke-linecap="round" stroke-linejoin="round" stroke-width="18">
+        <path d="M606 700 Q750 640 894 700 L876 804 Q820 858 765 812 L750 790 L735 812 Q680 858 624 804 Z"/>
+        <path d="M638 714 Q688 687 730 699 V774 Q688 823 651 792 Z" fill="#8298a1"/>
+        <path d="M770 699 Q812 687 862 714 L849 792 Q812 823 770 774 Z" fill="#8298a1"/>
+        <path d="M730 699 V774 L750 796 L770 774 V699"/>
+        <path d="M606 726 Q570 745 576 794" stroke="#b784a2"/>
+        <path d="M894 726 Q916 741 920 772"/>
+        <path d="M920 772 V624 Q920 580 876 580 H850" stroke="#b784a2"/>
+        <path d="M850 560 V600"/>
+        <circle cx="916" cy="535" r="13" fill="#f3efe6" stroke="none"/>
+        <circle cx="955" cy="575" r="9" fill="#b784a2" stroke="none"/>
+    </g>
+</svg>

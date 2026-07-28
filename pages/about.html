@@ -1,85 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Document metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    
-    <!-- External stylesheets -->
-    <link rel="stylesheet" href="../stylesheets/about_style.css">
-    <link rel="stylesheet" href="../stylesheets/shared_style.css">
+    <link rel="stylesheet" href="../stylesheets/site.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJL9ZCZ7YE"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LJL9ZCZ7YE');
+    </script>
 </head>
-<body>
-    <header>
-        <!-- Navigation menu -->
-        <nav>
-            <ul>
+<body class="standard-page about-page">
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-name" href="../index.html">Emma Allen</a>
+            <nav aria-label="Main navigation">
+                <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="about.html">About Me</a></li>
-            </ul>
-        </nav>
-        <h1>About Me</h1>
+                <li><a href="../pages/projects.html">Projects</a></li>
+                <li><a href="../pages/cv.html">CV</a></li>
+                <li><a class="is-active" href="../pages/about.html">About Me</a></li>
+                <li><a href="../pages/misc.html">Misc</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="page-heading">
+            <h1>About Me</h1>
+        </div>
     </header>
 
-    <section class="banner">
-        <!-- Image slideshow -->
-        <div class="slideshow">
-            <img src="../assets/pictures/mainPages/aboutPage/aboutBannerOne.png" alt="Slide 1">
-            <img src="../assets/pictures/mainPages/aboutPage/aboutBannerTwo.png" alt="Slide 2">
-            <img src="../assets/pictures/mainPages/aboutPage/aboutBannerThree.png" alt="Slide 3">
+    <main>
+        <section class="about-layout">
+            <div class="about-gallery" aria-hidden="true">
+                <figure class="about-photo"><img src="../assets/pictures/about/web/dog-field.jpg" alt=""></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/web/memory-eight.jpg" alt=""></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/web/matriculation-portrait.jpg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/web/diving.jpg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/web/oxford-one.jpg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/web/oxford-two.jpg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/20240615_mountain_hiking_view.jpg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/web/cake.jpg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/20250730_cocker_spaniel_in_meadow.jpg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/20240428_desert_canyon_arch.jpg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/20230225_loch_lomond_from_mountain.jpg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/20250313_yosemite_forest_river.jpeg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/web/oxford-three.jpg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/web/edinburgh-sunset.jpg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/20230905_cocker_spaniel_with_sunflower.jpg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/20240328_joshua_tree_landscape.jpg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/web/cake-fruit.jpg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/web/waterfall.jpg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/web/summer-four.jpg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/20250105_cocker_spaniel_puppy_with_toys.jpg" alt="" loading="lazy"></figure>
+                <figure class="about-photo"><img src="../assets/pictures/about/20250312_madeira_mountains_above_clouds.jpg" alt="" loading="lazy"></figure>
+            </div>
+
+            <div class="about-copy">
+                <h2>A little about me.</h2>
+                <p>Hello, my name is Emma! Welcome to my little corner of the internet.</p>
+                <p>I enjoy using computational and statistical methods to tackle problems in the physical sciences, particularly those related to climate and environmental systems. In the long term, I hope to build a research career focused on using computational approaches to address challenges in these areas.</p>
+                <p>I completed a BSc (Hons) in Computational Physics at the University of Edinburgh, including a year abroad at UCLA, followed by an MPhil in Data Intensive Science at the University of Cambridge. I am now about to begin a DPhil as part of the <a href="https://intelligent-earth.ox.ac.uk/">Intelligent Earth CDT</a> at the University of Oxford.</p>
+                <p>During my first year, I will take courses in machine learning, statistics and climate physics while exploring different research areas. This will give me the opportunity to develop a clearer research direction and make a more informed decision about the focus of my DPhil.</p>
+                <p>Across academic and industry settings, I have worked on a variety of projects, from modelling bacterial motion in fluid flows to analysing climate variability. What I enjoy most is addressing problems where scientific understanding directly shapes computational modelling. Applying physics to develop and refine models not only advances the code but also uncovers new insights that increases our collective knowledge.</p>
+                <p>I like to think life is more than academics, even if study has taken much of my time recently. In my free moments, I enjoy playing piano, <a href="baking.html">baking</a> and <a href="reading.html">reading</a>. I especially love being outdoors, gardening, wild swimming, <a href="diving.html">scuba diving</a> and hill walking. I love being in nature and find a sense of peace being outside. Of course these moments are always better with my friends and family, whose support and joy improve my life in every way.</p>
+                <p>Feel free to get in touch, the best way is through <a href="https://www.linkedin.com/in/e-allen">LinkedIn</a> or the <a href="contact.html">contact me page</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-meta">
+            <p>Emma Allen</p>
+            <small class="last-updated"><em>Last updated September 2026</em></small>
         </div>
-    </section>
-    
-    <section id="aboutText">
-        <!-- About me text -->
-        <h2>Heylo!!!</h2>
-
-            <p>                
-                I’m Emma, and welcome to my corner of the internet. I enjoy developing and applying 
-                computer science techniques, particularly AI, machine learning, and statistical analysis, to 
-                problems in the physical sciences. My main research interests are climate change and high-energy 
-                physics and my ultimate goal is to build a career using computational methods to address 
-                challenges in these areas.
-            </p> 
-            <p> 
-                I recently completed my BSc (Hons) in Computational Physics at the University of Edinburgh, 
-                including a year abroad at UCLA. I am now pursuing an MPhil in Data Intensive Science 
-                at the University of Cambridge, where I am continuing to develop my technical and analytical 
-                skills through advanced study in scientific computing, statistical analysis, and machine learning. 
-            </p> 
-            <p> 
-                Across academic and industry settings, I have worked on a variety of projects, 
-                from modelling bacterial motion in fluid flows to analysing climate variability. 
-                What I enjoy most is addressing problems where scientific understanding directly shapes 
-                computational modelling. Applying physics to develop and refine models not only advances 
-                the code but also uncovers new insights that deepen our collective knowledge. For example, 
-                in a data compression project, I applied entropy concepts to enhance compression algorithms 
-                for a large language model dataset.
-            </p> 
-            <p> 
-                I like to think life is more than academics, even if study has taken much of my time recently. 
-                In my free moments, I enjoy playing piano, baking and reading. I especially love 
-                being outdoors, gardening, wild-swimming, <a href="diving.html">scuba diving</a> and hill-walking. I love being in nature 
-                and find a sense of peace being outside. Of course these moments are always better with my friends and 
-                family, whose support and joy improve my life in every way.
-            </p>
-
-            <p> 
-                Feel free to get in touch, the best way is through <a href="https://www.linkedin.com/in/e-allen">LinkedIn</a>. 
-            </p>
-
-    </section>
-
-    <footer>
-        <!-- Social media links -->
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/e-allen/" class="fa fa-linkedin"></a>
-            <a href="https://github.com/ejallen471" class="fa fa-github"></a>
+        <div class="social-links" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/e-allen/" class="fa fa-linkedin" aria-label="LinkedIn"></a>
+            <a href="https://github.com/ejallen471" class="fa fa-github" aria-label="GitHub"></a>
         </div>
     </footer>
+
 </body>
 </html>

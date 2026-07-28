@@ -1,0 +1,12 @@
+# Local operating system metadata
+.DS_Store
+**/.DS_Store
+
+# Common editor state
+.vscode/
+.idea/
+
+# Local scratch output
+tmp/
+*.log
+.venv/

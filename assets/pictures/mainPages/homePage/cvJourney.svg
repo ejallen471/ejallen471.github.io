@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title description">
+    <title id="title">Education and research timeline</title>
+    <desc id="description">A timeline from Edinburgh to UCLA, Cambridge and Oxford.</desc>
+    <rect width="1000" height="1000" fill="#f3efe6"/>
+
+    <path d="M500 145 V880" fill="none" stroke="#b784a2" stroke-width="5"/>
+    <path d="M488 874 L500 892 L512 874" fill="none" stroke="#b784a2" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+
+    <g font-family="Inter, Helvetica Neue, Arial, sans-serif">
+        <circle cx="500" cy="255" r="15" fill="#f3efe6" stroke="#81516d" stroke-width="7"/>
+        <text x="448" y="285" fill="#163f3f" font-family="Georgia, Times New Roman, serif" font-size="50" text-anchor="end">Edinburgh</text>
+        <text x="448" y="320" fill="#65706b" font-size="21" text-anchor="end">BSc (Hons) Computational Physics</text>
+
+        <circle cx="500" cy="430" r="15" fill="#f3efe6" stroke="#81516d" stroke-width="7"/>
+        <text x="552" y="460" fill="#163f3f" font-family="Georgia, Times New Roman, serif" font-size="50">UCLA</text>
+        <text x="552" y="495" fill="#65706b" font-size="21">Year abroad</text>
+
+        <circle cx="500" cy="605" r="15" fill="#f3efe6" stroke="#81516d" stroke-width="7"/>
+        <text x="448" y="635" fill="#163f3f" font-family="Georgia, Times New Roman, serif" font-size="50" text-anchor="end">Cambridge</text>
+        <text x="448" y="670" fill="#65706b" font-size="21" text-anchor="end">MPhil Data Intensive Science</text>
+
+        <circle cx="500" cy="780" r="19" fill="#81516d" stroke="#81516d" stroke-width="7"/>
+        <circle cx="500" cy="780" r="7" fill="#f3efe6"/>
+        <text x="552" y="810" fill="#163f3f" font-family="Georgia, Times New Roman, serif" font-size="50">Oxford</text>
+        <text x="552" y="845" fill="#65706b" font-size="21">DPhil Intelligent Earth</text>
+        <rect x="552" y="865" width="105" height="38" rx="19" fill="#163f3f"/>
+        <text x="604.5" y="891" fill="#f3efe6" font-size="15" font-weight="800" letter-spacing="2" text-anchor="middle">CURRENT</text>
+    </g>
+</svg>

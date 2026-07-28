@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title description">
+    <title id="title">Project word cloud</title>
+    <desc id="description">A tightly packed word cloud of project topics arranged horizontally and vertically around Projects.</desc>
+    <style>text { font-family: Georgia, "Times New Roman", serif; font-weight: normal; font-style: normal; }</style>
+    <rect width="1000" height="1000" fill="#f3efe6"/>
+    <g transform="translate(20 20)">
+        <text transform="translate(53,502)" font-size="166" fill="#b784a2">Projects</text>
+        <text transform="translate(190,807)" font-size="133" fill="#163f3f">Python</text>
+        <text transform="translate(154,302)" font-size="130" fill="#163f3f">NeuralGCM</text>
+        <text transform="translate(22,175)" font-size="112" fill="#163f3f">Machine Learning</text>
+        <text transform="translate(50,626)" font-size="98" fill="#65706b">Cyclone Forecasting</text>
+        <text transform="translate(76,896)" font-size="77" fill="#81516d">Computational Physics</text>
+        <text transform="translate(339,362)" font-size="74" fill="#163f3f">CRPS</text>
+        <text transform="translate(147,686)" font-size="71" fill="#163f3f">Hydrostatic Equations</text>
+        <text transform="translate(353,85)" font-size="65" fill="#163f3f">Neural Networks</text>
+        <text transform="translate(526,369)" font-size="58" fill="#81516d">Particle Physics</text>
+        <text transform="translate(351,542)" font-size="48" fill="#163f3f">Molecular Dynamics</text>
+        <text transform="translate(861,554) rotate(-90)" font-size="47" fill="#65706b">Vorticity</text>
+        <text transform="translate(680,802)" font-size="46" fill="#163f3f">Fujiwhara</text>
+        <text transform="translate(703,727)" font-size="44" fill="#65706b">Simulation</text>
+        <text transform="translate(126,349)" font-size="43" fill="#65706b">JASMIN</text>
+        <text transform="translate(100,323) rotate(-90)" font-size="42" fill="#163f3f">ERA5</text>
+        <text transform="translate(161,201)" font-size="29" fill="#81516d">Kernel Density Estimation</text>
+        <text transform="translate(610,753)" font-size="27" fill="#b784a2">Solar System Simulation</text>
+        <text transform="translate(417,392)" font-size="26" fill="#81516d">Parton Distribution Functions</text>
+        <text transform="translate(521,111)" font-size="25" fill="#163f3f">Statistical Moments</text>
+        <text transform="translate(468,723)" font-size="24" fill="#81516d">Boundary Conditions</text>
+        <text transform="translate(160,540)" font-size="24" fill="#81516d">Uncertainty</text>
+        <text transform="translate(49,437) rotate(-90)" font-size="23" fill="#81516d">Weather Forecasting</text>
+        <text transform="translate(404,926)" font-size="23" fill="#163f3f">Hybrid Modelling</text>
+        <text transform="translate(366,829)" font-size="22" fill="#81516d">Numerical Methods</text>
+        <text transform="translate(68,872) rotate(-90)" font-size="22" fill="#163f3f">Root Mean Square Error</text>
+        <text transform="translate(642,463)" font-size="21" fill="#81516d">Forecast Skill</text>
+        <text transform="translate(700,833)" font-size="21" fill="#163f3f">Forecast Error</text>
+        <text transform="translate(119,825) rotate(-90)" font-size="20" fill="#163f3f">Integration</text>
+        <text transform="translate(881,313) rotate(-90)" font-size="20" fill="#b784a2">Intensity</text>
+        <text transform="translate(615,570)" font-size="20" fill="#81516d">Ensemble</text>
+        <text transform="translate(95,837) rotate(-90)" font-size="20" fill="#b784a2">Atmospheric Dynamics</text>
+        <text transform="translate(80,200)" font-size="19" fill="#81516d">NumPy</text>
+        <text transform="translate(173,403)" font-size="19" fill="#b784a2">Gaussian</text>
+        <text transform="translate(923,558) rotate(-90)" font-size="19" fill="#b784a2">Péclet Number</text>
+        <text transform="translate(249,565)" font-size="19" fill="#163f3f">Climate Modelling</text>
+        <text transform="translate(69,374)" font-size="19" fill="#65706b">Numerical Weather Prediction</text>
+        <text transform="translate(825,851)" font-size="19" fill="#81516d">Climate AI</text>
+        <text transform="translate(534,193)" font-size="19" fill="#65706b">Medium Range Forecast Accuracy</text>
+        <text transform="translate(260,227)" font-size="18" fill="#65706b">Beeman Numerical Integration</text>
+        <text transform="translate(17,518)" font-size="18" fill="#b784a2">General Circulation Models</text>
+        <text transform="translate(658,426)" font-size="17" fill="#81516d">Gulab And Shaheen</text>
+        <text transform="translate(885,538) rotate(-90)" font-size="17" fill="#163f3f">Excess Kurtosis</text>
+        <text transform="translate(125,850)" font-size="16" fill="#b784a2">Cyclone Tracking Workflow</text>
+        <text transform="translate(901,552) rotate(-90)" font-size="16" fill="#81516d">Direct Euler Integration</text>
+        <text transform="translate(355,114)" font-size="16" fill="#65706b">Hurricane Laura</text>
+        <text transform="translate(650,492)" font-size="16" fill="#b784a2">Tropical Cyclones</text>
+        <text transform="translate(139,834) rotate(-90)" font-size="16" fill="#b784a2">Geopontential Height</text>
+        <text transform="translate(273,921)" font-size="16" fill="#b784a2">Data Assimilation</text>
+        <text transform="translate(358,407)" font-size="16" fill="#b784a2">Annual Cyclone Tracks</text>
+        <text transform="translate(857,317) rotate(-90)" font-size="16" fill="#65706b">Climate Prediction</text>
+        <text transform="translate(90,928)" font-size="16" fill="#65706b">Tropical Cyclone Tracks</text>
+        <text transform="translate(229,707)" font-size="15" fill="#81516d">Ensemble Forecasting</text>
+        <text transform="translate(815,540) rotate(-90)" font-size="14" fill="#65706b">Re-Intensification</text>
+        <text transform="translate(827,103)" font-size="14" fill="#b784a2">Track Curvature</text>
+        <text transform="translate(606,320)" font-size="14" fill="#163f3f">Track Prediction</text>
+        <text transform="translate(604,405)" font-size="14" fill="#163f3f">Probabilistic Forecasting</text>
+        <text transform="translate(724,914)" font-size="14" fill="#65706b">Fluid Dynamics</text>
+        <text transform="translate(179,827) rotate(-90)" font-size="14" fill="#65706b">High Energy Physics</text>
+        <text transform="translate(810,767)" font-size="14" fill="#65706b">Stochastic Modelling</text>
+        <text transform="translate(638,439)" font-size="13" fill="#65706b">Atmospheric Modelling</text>
+        <text transform="translate(802,815)" font-size="12" fill="#163f3f">Uncertainty Quantification</text>
+        <text transform="translate(789,505) rotate(-90)" font-size="12" fill="#163f3f">Orbital Period</text>
+        <text transform="translate(915,274) rotate(-90)" font-size="24" fill="#163f3f">Seroja</text>
+        <text transform="translate(482,555)" font-size="11" fill="#65706b">Faraji</text>
+        <text transform="translate(848,80)" font-size="11" fill="#163f3f">MSLP</text>
+        <text transform="translate(740,644)" font-size="11" fill="#81516d">Data Science</text>
+        <text transform="translate(730,928)" font-size="11" fill="#65706b">Deep Learning</text>
+        <text transform="translate(127,307) rotate(-90)" font-size="11" fill="#163f3f">Energy Conservation</text>
+        <text transform="translate(665,824) rotate(-90)" font-size="11" fill="#65706b">Jeffery Orbits</text>
+        <text transform="translate(150,313) rotate(-90)" font-size="11" fill="#81516d">Diffusive Rotation</text>
+        <text transform="translate(420,698)" font-size="11" fill="#163f3f">Kullback Leibler Divergence</text>
+        <text transform="translate(20,537)" font-size="11" fill="#65706b">Global Covariance Matrix</text>
+        <text transform="translate(567,907)" font-size="11" fill="#163f3f">Deep Inelastic Scattering</text>
+        <text transform="translate(60,353) rotate(-90)" font-size="11" fill="#b784a2">Monte Carlo Replicas</text>
+    </g>
+</svg>

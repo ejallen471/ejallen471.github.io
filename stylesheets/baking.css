@@ -1,0 +1,176 @@
+.baking_section {
+    margin: clamp(4rem, 9vw, 8rem) auto;
+    max-width: var(--content);
+    width: calc(100% - 3rem);
+}
+
+.baking_section_intro {
+    border-bottom: 1px solid var(--line);
+    margin-bottom: clamp(2rem, 5vw, 4rem);
+    padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.baking_section_intro p:last-child {
+    color: var(--muted);
+    margin-bottom: 0;
+    max-width: 42rem;
+}
+
+.baking_collections {
+    display: grid;
+    gap: clamp(1rem, 2vw, 1.5rem);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.baking_collection {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    min-width: 0;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.baking_collection > h3 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.baking_grid,
+.recipe_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.empty_collection {
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-style: italic;
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 1.5rem 0;
+}
+
+.recommendation_card,
+.recipe_card {
+    border-top: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0;
+}
+
+.recommendation_card h4,
+.recipe_card h4 {
+    color: var(--heading);
+    font-family: var(--display);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -0.035em;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.recipe_card {
+    min-height: 0;
+}
+
+.recipe_card h4 {
+    font-size: 1.35rem;
+    margin: 0;
+}
+
+.recipe_card h4 a {
+    display: inline;
+}
+
+.recommendation_card .section-label,
+.recipe_card .section-label {
+    color: var(--accent);
+    font-size: 0.7rem;
+    margin-bottom: 1.2rem;
+}
+
+.recommendation_card p,
+.recipe_card p {
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+.recommendation_card a,
+.recipe_card a {
+    align-self: flex-start;
+}
+
+.recipe_page_main {
+    margin: clamp(4rem, 9vw, 8rem) auto;
+    max-width: 58rem;
+    width: calc(100% - 3rem);
+}
+
+.recipe_return {
+    display: inline-block;
+    margin-bottom: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.recipe_summary,
+.recipe_content {
+    border-bottom: 1px solid var(--line);
+    margin-bottom: clamp(2.5rem, 6vw, 4.5rem);
+    padding-bottom: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.recipe_summary {
+    color: var(--muted);
+}
+
+.recipe_details {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+}
+
+.recipe_details strong {
+    color: var(--heading);
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+}
+
+.recipe_content ul,
+.recipe_content ol {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    padding-left: 1.4rem;
+}
+
+.recipe_content li + li {
+    margin-top: 0.75rem;
+}
+
+.recipe_notes {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.recipe_notes p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 760px) {
+    .baking_collections {
+        grid-template-columns: 1fr;
+    }
+
+    .recipe_details {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .baking_section,
+    .recipe_page_main {
+        width: calc(100% - 2rem);
+    }
+}

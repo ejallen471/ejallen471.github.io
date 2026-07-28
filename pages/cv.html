@@ -4,51 +4,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
-    <link rel="stylesheet" href="../stylesheets/cv_style.css">
-    <link rel="stylesheet" href="../stylesheets/shared_style.css">
+    <link rel="stylesheet" href="../stylesheets/site.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJL9ZCZ7YE"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LJL9ZCZ7YE');
+    </script>
 </head>
-<body>
+<body class="standard-page cv-page">
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-name" href="../index.html">Emma Allen</a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/projects.html">Projects</a></li>
+                    <li><a class="is-active" href="../pages/cv.html">CV</a></li>
+                    <li><a href="../pages/about.html">About Me</a></li>
+                    <li><a href="../pages/misc.html">Misc</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="page-heading">
+            <h1>Curriculum Vitae</h1>
+        </div>
+    </header>
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="about.html">About Me</a></li>
-        </ul>
-        <h1>Curriculum Vitae</h1>
-    </nav>
-</header>
+    <main>
+        <section class="cv-intro" aria-label="CV summary">
+            <div class="cv-intro-copy">
+                <p>Below is my CV,</p>
+                <p>For an updated version, or just to have a chat, feel free to get in touch through my <a href="contact.html">Contact Me</a> page or <a href="https://www.linkedin.com/in/e-allen/">LinkedIn</a>.</p>
+            </div>
+            <div>
+                <dl class="cv-details">
+                    <div>
+                        <dt>Current</dt>
+                        <dd>Intelligent Earth CDT</dd>
+                    </div>
+                    <div>
+                        <dt>Based in</dt>
+                        <dd>Oxford, United Kingdom</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
 
-<section class="banner">
-    <img src="../assets/pictures/mainPages/cv/cvBanner.png" alt="Slide 1">       
-</section>
+        <section class="pdf-card" aria-label="Curriculum vitae">
+            <div class="pdf-card-header">
+                <div>
+                    <p class="pdf-card-type">Curriculum vitae</p>
+                </div>
+                <div class="pdf-card-actions">
+                    <a class="pdf-button pdf-button-primary" href="../assets/pdfs/EmmaAllen_CV.pdf" target="_blank" rel="noopener">Open PDF</a>
+                    <a class="pdf-button" href="../assets/pdfs/EmmaAllen_CV.pdf" download>Download</a>
+                </div>
+            </div>
+            <div class="pdf-viewer">
+                <object data="../assets/pdfs/EmmaAllen_CV.pdf#view=FitH&amp;navpanes=0" type="application/pdf" aria-label="Emma Allen curriculum vitae">
+                    <p>Your browser cannot display this PDF. <a href="../assets/pdfs/EmmaAllen_CV.pdf">Open the CV instead</a>.</p>
+                </object>
+            </div>
+        </section>
 
-<main>
+        <section class="academics" aria-labelledby="academics-heading">
+            <div class="academics-heading">
+                <h2 id="academics-heading">Academics</h2>
+                <p>Below are the courses I completed during my undergraduate and masters degrees. Where possible there are links to course descriptions. If you would like further information or a transcript, please <a href="contact.html">get in touch</a>.</p>
+            </div>
 
-    <section class="pdf">
-        <embed 
-            src="../assets/pdfs/EmmaAllen_CV.pdf"
-            type="application/pdf"
-            width="100%"
-            height="100%"
-        >  
-    </section>
+            <div class="academics-group">
+                <h3>Undergraduate</h3>
+                <div class="academic-grid academic-grid-edinburgh">
+                    <article class="academic-card">
+                        <h4>Year One</h4>
+                        <p class="academic-location"><a href="https://www.ed.ac.uk/">University of Edinburgh</a></p>
+                        <h5>Semester One</h5>
+                        <ul>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys08035.htm">Mathematics for Physics 1</a> <span>PHYS08035</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxinfr08025.htm">Introduction to Computation</a> <span>INFR08025</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys08016.htm">Physics 1A</a> <span>PHYS08016</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxelcf07008.htm">Foundation French 2</a> <span>ELCF07008</span></li>
+                        </ul>
+                        <h5>Semester Two</h5>
+                        <ul>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxinfr08029.htm">Object Oriented Programming</a> <span>INFR08029</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys08036.htm">Mathematics for Physics 2</a> <span>PHYS08036</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys08017.htm">Physics 1B</a> <span>PHYS08017</span></li>
+                        </ul>
+                    </article>
 
-    <section id="afterword">
-        <p>Last updated September 2025, if you would like an updated CV, please get in touch</p>
-    </section>
+                    <article class="academic-card">
+                        <h4>Year Two</h4>
+                        <p class="academic-location"><a href="https://www.ed.ac.uk/">University of Edinburgh</a></p>
+                        <h5>Semester One</h5>
+                        <ul>
+                            <li><a href="https://www.drps.ed.ac.uk/21-22/dpt/cxinfr08027.htm">Informatics 2C, Introduction to Computer Systems</a> <span>INFR08027</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys08045.htm">Modern Physics</a> <span>PHYS08045</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys08042.htm">Linear Algebra and Several Variable Calculus</a> <span>PHYS08042</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys08049.htm">Programming and Data Analysis</a> <span>PHYS08049</span></li>
+                        </ul>
+                        <h5>Semester Two</h5>
+                        <ul>
+                            <li><a href="https://www.drps.ed.ac.uk/21-22/dpt/cxphys08056.htm">Experimental Physics 2</a> <span>PHYS08056</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys08026.htm">Computer Simulation</a> <span>PHYS08026</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys08046.htm">Physics of Fields and Matter</a> <span>PHYS08046</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys08043.htm">Dynamics and Vector Calculus</a> <span>PHYS08043</span></li>
+                        </ul>
+                    </article>
 
-</main>
+                    <article class="academic-card">
+                        <h4>Year Three</h4>
+                        <p class="academic-location"><a href="https://www.ucla.edu/">University of California, Los Angeles</a></p>
+                        <p class="academic-catalogue"><a href="https://catalog.registrar.ucla.edu/">UCLA course catalogue</a></p>
+                        <h5>Term One</h5>
+                        <ul>
+                            <li>Quantum Mechanics <span>Physics 115A</span></li>
+                            <li>Introduction to Analysis <span>Mathematics 131A</span> <span>Audited</span></li>
+                            <li>Introduction to Probability and Statistics <span>Probability 170A</span></li>
+                            <li>Machine Learning for the Physical Sciences <span>Atmospheric and Oceanic Sciences C111</span></li>
+                            <li>Mathematical Methods <span>Physics 32</span></li>
+                        </ul>
+                        <h5>Term Two</h5>
+                        <ul>
+                            <li>Quantum Mechanics <span>Physics 115B</span></li>
+                            <li>Electricity and Magnetism <span>Physics 110A</span></li>
+                            <li>Introduction to Probability and Statistics <span>Statistics 170B</span></li>
+                            <li>Directed Research <span>Atmospheric and Oceanic Sciences 199</span></li>
+                            <li>Ordinary Differential Equations <span>Mathematics 135</span></li>
+                        </ul>
+                        <h5>Term Three</h5>
+                        <ul>
+                            <li>Quantum Mechanics <span>Physics 115C</span></li>
+                            <li>Electricity and Magnetism <span>Physics 110B</span></li>
+                            <li>Applied Numerical Methods <span>Mathematics 151A</span> <span>Audited</span></li>
+                            <li>Directed Research <span>Atmospheric and Oceanic Sciences 199</span></li>
+                            <li>Thermal Physics <span>Physics 112</span></li>
+                        </ul>
+                    </article>
 
-<footer>
-    <div class="social-links">
-        <a href="https://www.linkedin.com/in/e-allen/" class="fa fa-linkedin"></a>
-        <a href="https://github.com/ejallen471" class="fa fa-github"></a>
-    </div>
-</footer>
+                    <article class="academic-card">
+                        <h4>Year Four</h4>
+                        <p class="academic-location"><a href="https://www.ed.ac.uk/">University of Edinburgh</a></p>
+                        <h5>Semester One</h5>
+                        <ul>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys10086.htm">Senior Honours Project</a> <span>PHYS10086</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxepcc11006.htm">Numerical Algorithms for High Performance Computing</a> <span>EPCC11006</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys10096.htm">Relativity, Nuclear and Particle Physics</a> <span>PHYS10096</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys10099.htm">Introduction to Condensed Matter Physics</a> <span>PHYS10099</span></li>
+                        </ul>
+                        <h5>Semester Two</h5>
+                        <ul>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxinfr11247.htm">Computer Graphics, Geometry and Simulation</a> <span>INFR11247</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys10035.htm">Modelling and Visualisation in Physics</a> <span>PHYS10035</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys10042.htm">Physics Skills</a> <span>PHYS10042</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys11024.htm">Statistical Physics</a> <span>PHYS11024</span></li>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys10043.htm">Quantum Physics</a> <span>PHYS10043</span></li>
+                        </ul>
+                        <h5>Full Year</h5>
+                        <ul>
+                            <li><a href="https://www.drps.ed.ac.uk/current/dpt/cxphys11011.htm">Group Project</a> <span>PHYS11011</span></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
 
+            <div class="academics-group">
+                <h3>Postgraduate</h3>
+                <div class="academic-grid academic-grid-single">
+                    <article class="academic-card">
+                        <h4>Masters</h4>
+                        <p class="academic-location"><a href="https://www.cam.ac.uk/">University of Cambridge</a></p>
+                        <p class="academic-catalogue"><a href="https://mphildis.bigdata.cam.ac.uk/course-structure/">MPhil Data Intensive Science courses</a></p>
+                        <h5>Michaelmas</h5>
+                        <ul>
+                            <li>Research Computing</li>
+                            <li>Introduction to Machine Learning</li>
+                            <li>Statistical Methods for Data Intensive Science</li>
+                        </ul>
+                        <h5>Lent</h5>
+                        <ul>
+                            <li>High Performance Computing</li>
+                            <li>Deep Learning <span>Audited</span></li>
+                            <li>Bayesian Statistics</li>
+                            <li>Machine Learning for High Energy Physics</li>
+                        </ul>
+                        <h5>Easter</h5>
+                        <ul>
+                            <li>Multi Agent Reinforcement Learning and Agentic Artificial Intelligence</li>
+                            <li>Machine Learning Applied to Weather and Climate <span>Audited</span></li>
+                            <li>Machine Learning for the Sciences <span>Audited</span></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-meta">
+            <p>Emma Allen</p>
+            <small class="last-updated"><em>Last updated September 2026</em></small>
+        </div>
+        <div class="social-links" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/e-allen/" class="fa fa-linkedin" aria-label="LinkedIn"></a>
+            <a href="https://github.com/ejallen471" class="fa fa-github" aria-label="GitHub"></a>
+        </div>
+    </footer>
 </body>
 </html>

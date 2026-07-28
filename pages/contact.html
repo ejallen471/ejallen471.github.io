@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../stylesheets/site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJL9ZCZ7YE"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LJL9ZCZ7YE');
+    </script>
+</head>
+<body class="standard-page">
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-name" href="../index.html">Emma Allen</a>
+            <nav aria-label="Main navigation">
+                <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/projects.html">Projects</a></li>
+                <li><a href="../pages/cv.html">CV</a></li>
+                <li><a href="../pages/about.html">About Me</a></li>
+                <li><a href="../pages/misc.html">Misc</a></li>
+                <li><a class="is-active" href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="page-heading">
+            <h1>Contact Me</h1>
+        </div>
+    </header>
+
+    <div class="page-description"><p>If you would like to have a chat about anything on the website or anything else, please get in touch using the form below.</p></div>
+
+    <main>
+        <section class="contact-section">
+            <form class="contact-form" action="https://formsubmit.co/emmallen471@gmail.com" method="POST" aria-label="Contact form">
+                <input type="hidden" name="_subject" value="New message from my website">
+                <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                <div class="form-field">
+                    <label for="contact-name">Name</label>
+                    <input id="contact-name" name="name" type="text" autocomplete="name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="contact-email">Email</label>
+                    <input id="contact-email" name="email" type="email" autocomplete="email" required>
+                </div>
+
+                <div class="form-field form-field-wide">
+                    <label for="contact-subject">Subject</label>
+                    <input id="contact-subject" name="subject" type="text" required>
+                </div>
+
+                <div class="form-field form-field-wide">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="8" required></textarea>
+                </div>
+
+                <button type="submit">Send message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-meta">
+            <p>Emma Allen</p>
+            <small class="last-updated"><em>Last updated September 2026</em></small>
+        </div>
+        <div class="social-links" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/e-allen/" class="fa fa-linkedin" aria-label="LinkedIn"></a>
+            <a href="https://github.com/ejallen471" class="fa fa-github" aria-label="GitHub"></a>
+        </div>
+    </footer>
+</body>
+</html>
