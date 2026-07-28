@@ -47,7 +47,7 @@ grouped by purpose.
    The homepage.
 
 ``pages``
-   The main About, CV, Projects and Contact pages.
+   The main About, CV and Projects pages.
 
 ``projects``
    The detailed pages and documents for individual projects.

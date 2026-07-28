@@ -684,86 +684,6 @@ h3 {
     text-transform: uppercase;
 }
 
-.contact-section {
-    margin: clamp(4rem, 8vw, 7rem) auto;
-    max-width: 50rem;
-    width: calc(100% - 3rem);
-}
-
-.contact-form {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.contact-form > input[aria-hidden="true"] {
-    left: -10000px;
-    position: absolute;
-}
-
-.form-field {
-    display: flex;
-    flex-direction: column;
-    gap: 0.55rem;
-}
-
-.form-field-wide {
-    grid-column: 1 / -1;
-}
-
-.form-field label {
-    color: var(--heading);
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-}
-
-.form-field input,
-.form-field textarea {
-    background: var(--paper);
-    border: 1px solid var(--line);
-    border-radius: 0.6rem;
-    color: var(--ink);
-    font: inherit;
-    padding: 0.9rem 1rem;
-    width: 100%;
-}
-
-.form-field textarea {
-    min-height: 12rem;
-    resize: vertical;
-}
-
-.form-field input:focus,
-.form-field textarea:focus {
-    border-color: var(--accent);
-    outline: 2px solid rgba(129, 81, 109, 0.18);
-    outline-offset: 2px;
-}
-
-.contact-form button {
-    background: var(--teal);
-    border: 1px solid var(--teal);
-    border-radius: 0.6rem;
-    color: var(--on-dark);
-    cursor: pointer;
-    font: inherit;
-    font-size: 0.78rem;
-    font-weight: 700;
-    grid-column: 1 / -1;
-    justify-self: start;
-    letter-spacing: 0.1em;
-    padding: 0.9rem 1.4rem;
-    text-transform: uppercase;
-}
-
-.contact-form button:hover,
-.contact-form button:focus-visible {
-    background: var(--accent);
-    border-color: var(--accent);
-}
-
 .intro-text {
     display: grid;
     gap: 0 3rem;
@@ -1929,11 +1849,6 @@ h3 {
         grid-template-columns: 1fr;
     }
 
-    .contact-section,
-    .contact-form {
-        grid-template-columns: 1fr;
-    }
-
     .misc-card + .misc-card {
         border-left: 0;
         border-top: 1px solid var(--line);
@@ -1945,6 +1860,7 @@ h3 {
     }
 
     .site-header ul {
+        flex-wrap: wrap;
         gap: 0.6rem 1rem;
         justify-content: flex-end;
     }
