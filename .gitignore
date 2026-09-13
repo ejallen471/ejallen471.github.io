@@ -10,3 +10,8 @@
 tmp/
 *.log
 .venv/
+
+# Python / Sphinx build artifacts
+__pycache__/
+*.pyc
+docs/_build/

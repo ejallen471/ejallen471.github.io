@@ -17,7 +17,7 @@ scripts/diving_map.js  Diving map
 
 ## Editing
 
-Edit the HTML, CSS or JavaScript directly. 
+Edit the HTML, CSS or JavaScript directly.
 
 To preview the site locally, run this command from the repository root.
 

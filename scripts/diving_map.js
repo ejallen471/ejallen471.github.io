@@ -28,6 +28,7 @@ class DiveMap {
             zoom: 2,
             scrollWheelZoom: false
         });
+        this.map.attributionControl.setPrefix(false);
 
         this.addBaseTiles();
         this.addInterface();
@@ -38,9 +39,8 @@ class DiveMap {
     }
 
     addBaseTiles() {
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
-            subdomains: 'abcd',
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             minZoom: 2,
             maxZoom: 19,
             noWrap: true
@@ -205,6 +205,7 @@ const diveSpots = [
     { id: 'prestonhill', lat: 56.0272, lng: -3.3831, name: 'Prestonhill Quarry', region: 'Scotland' },
     { id: 'fortWilliam', lat: 56.7196, lng: -5.2304, name: 'Fort William (PH33 6SE)', region: 'Scotland' },
     { id: 'carnochBay', lat: 56.6804, lng: -5.1327, name: 'Carnoch Bay', region: 'Scotland' },
+    { id: 'kinlochbervie', lat: 58.4700, lng: -5.1300, name: 'Kinlochbervie', region: 'Scotland' },
     { id: 'capernwray', lat: 54.1371, lng: -2.7232, name: 'Capernwray Diving Centre', region: 'England' },
     { id: 'lasVistas', lat: 28.0650, lng: -16.7340, name: 'Las Vistas', region: 'Tenerife' },
     { id: 'laPinta', lat: 28.0803, lng: -16.7350, name: 'La Pinta', region: 'Tenerife' },

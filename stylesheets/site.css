@@ -51,19 +51,19 @@ a:focus-visible {
     text-decoration: none;
 }
 
-a:not(.showcase-image):not(.showcase-heading-link):not(.project-heading-link):not(.fa):not(.pdf-button) {
+a:not(.showcase-image, .showcase-heading-link, .project-heading-link, .fa, .pdf-button) {
     background-image: linear-gradient(var(--plum), var(--plum));
     background-position: 0 100%;
     background-repeat: no-repeat;
     background-size: 0 2px;
+    -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     padding-bottom: 0.2em;
     transition: background-size 240ms ease, color 180ms ease;
-    -webkit-box-decoration-break: clone;
 }
 
-a:not(.showcase-image):not(.showcase-heading-link):not(.project-heading-link):not(.fa):not(.pdf-button):hover,
-a:not(.showcase-image):not(.showcase-heading-link):not(.project-heading-link):not(.fa):not(.pdf-button):focus-visible {
+a:not(.showcase-image, .showcase-heading-link, .project-heading-link, .fa, .pdf-button):hover,
+a:not(.showcase-image, .showcase-heading-link, .project-heading-link, .fa, .pdf-button):focus-visible {
     background-size: 100% 2px;
 }
 
@@ -100,7 +100,7 @@ h3 {
 
 .site-header {
     background: var(--teal);
-    border-bottom: 1px solid rgba(243, 239, 230, 0.3);
+    border-bottom: 1px solid rgb(243 239 230 / 30%);
 }
 
 .header-inner,
@@ -135,7 +135,7 @@ h3 {
 }
 
 .home-page .site-header {
-    border-bottom-color: rgba(243, 239, 230, 0.3);
+    border-bottom-color: rgb(243 239 230 / 30%);
     color: var(--on-dark);
     left: 0;
     position: absolute;
@@ -168,7 +168,7 @@ h3 {
 }
 
 .site-header nav a {
-    color: rgba(243, 239, 230, 0.72);
+    color: rgb(243 239 230 / 72%);
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -242,7 +242,7 @@ h3 {
     border-top: 1px solid var(--line);
     display: flex;
     justify-content: space-between;
-    margin-top: clamp(4rem, 10vw, 8rem);
+    margin-top: clamp(2rem, 5vw, 4rem);
     padding: 2rem 0 3rem;
 }
 
@@ -302,88 +302,44 @@ h3 {
     max-width: 850px;
 }
 
-.reading-kicker {
-    color: rgba(243, 239, 230, 0.68);
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.16em;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
+.diving-intro {
+    margin-bottom: clamp(2rem, 4.5vw, 4rem);
+    margin-top: clamp(2rem, 4.5vw, 4rem);
 }
 
 .reading-shelf {
-    margin: clamp(4rem, 9vw, 7rem) auto 0;
+    margin: clamp(2rem, 4.5vw, 3.5rem) auto 0;
     max-width: 960px;
     width: calc(100% - 3rem);
 }
 
-.reading-intro {
-    border-bottom: 1px solid var(--line);
-    margin-bottom: 0;
-    padding-bottom: clamp(1.5rem, 4vw, 2.5rem);
-}
-
-.reading-intro h2 {
-    margin-bottom: 0;
-}
-
 .reading-columns {
     display: grid;
-    gap: clamp(2rem, 5vw, 4rem);
+    gap: clamp(1rem, 2vw, 1.5rem);
     grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.reading-column {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    min-width: 0;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .reading-column > h3 {
     border-bottom: 1px solid var(--line);
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
-    padding: clamp(1.5rem, 4vw, 2.5rem) 0 1rem;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+    padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
 }
 
-.book-card {
-    align-items: start;
-    border-bottom: 1px solid var(--line);
-    display: grid;
-    gap: clamp(1rem, 2vw, 1.5rem);
-    grid-template-columns: 2.5rem minmax(0, 1fr);
-    padding: clamp(1.25rem, 3vw, 2rem) 0;
+.book-list {
+    line-height: 1.7;
+    padding-left: 1.25rem;
 }
 
-.book-number {
-    color: var(--plum);
-    font-family: var(--display);
-    font-size: 1rem;
-    padding-top: 0.45rem;
-}
-
-.book-author {
-    color: var(--muted);
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    margin-bottom: 0.7rem;
-    text-transform: uppercase;
-}
-
-.book-details h4 {
-    color: var(--heading);
-    font-family: var(--display);
-    font-size: clamp(1.25rem, 2vw, 1.65rem);
-    font-weight: 400;
-    letter-spacing: -0.035em;
-    margin-bottom: 0.9rem;
-}
-
-.book-details > p:not(.book-author) {
-    max-width: 650px;
-}
-
-.book-link {
-    display: inline-block;
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    margin-top: 0.5rem;
-    text-transform: uppercase;
+.book-list li + li {
+    margin-top: 0.65rem;
 }
 
 .about-layout {
@@ -404,7 +360,7 @@ h3 {
     background: var(--paper);
     border: 0;
     border-radius: 0.75rem;
-    box-shadow: 0 1.2rem 3rem rgba(32, 39, 37, 0.08);
+    box-shadow: 0 1.2rem 3rem rgb(32 39 37 / 8%);
     margin: 0;
     overflow: hidden;
     position: absolute;
@@ -623,58 +579,6 @@ h3 {
     color: var(--muted);
 }
 
-.misc-intro {
-    margin-bottom: clamp(3rem, 6vw, 5rem);
-    max-width: var(--content);
-}
-
-.misc-intro > h2,
-.misc-intro > p,
-.misc-intro > .section-label {
-    color: var(--heading);
-    font-family: var(--display);
-    font-size: clamp(1.8rem, 4vw, 3.2rem);
-    font-weight: 400;
-    letter-spacing: -0.035em;
-    line-height: 1.05;
-    max-width: none;
-    text-transform: none;
-}
-
-.misc-links {
-    margin: 0 auto;
-    max-width: var(--content);
-    width: calc(100% - 3rem);
-}
-
-.misc-links > h2 {
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 1.5rem;
-}
-
-.misc-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.misc-card {
-    min-height: 260px;
-    padding: 2rem;
-}
-
-.misc-card + .misc-card {
-    border-left: 1px solid var(--line);
-}
-
-.misc-card h3 {
-    margin-bottom: 1rem;
-}
-
-.misc-card p:last-child {
-    color: var(--muted);
-    font-size: 1rem;
-}
-
 .section-label {
     color: var(--accent);
     font-size: 0.7rem;
@@ -737,7 +641,7 @@ h3 {
 
 .home-hero::before {
     animation: hero-background-drift 26s ease-in-out infinite alternate;
-    background: radial-gradient(circle, rgba(183, 132, 162, 0.16), rgba(183, 132, 162, 0) 68%);
+    background: radial-gradient(circle, rgb(183 132 162 / 16%), rgb(183 132 162 / 0%) 68%);
     height: min(82vw, 980px);
     left: -18%;
     top: -34%;
@@ -746,7 +650,7 @@ h3 {
 
 .home-hero::after {
     animation: hero-background-drift-reverse 32s ease-in-out infinite alternate;
-    background: radial-gradient(circle, rgba(243, 239, 230, 0.08), rgba(243, 239, 230, 0) 70%);
+    background: radial-gradient(circle, rgb(243 239 230 / 8%), rgb(243 239 230 / 0%) 70%);
     bottom: -42%;
     height: min(74vw, 880px);
     right: -14%;
@@ -755,7 +659,7 @@ h3 {
 
 .hero-glow {
     animation: hero-glow-breathe 16s ease-in-out infinite alternate;
-    background: radial-gradient(circle, rgba(183, 132, 162, 0.9) 0, rgba(183, 132, 162, 0.48) 28%, rgba(22, 63, 63, 0) 68%);
+    background: radial-gradient(circle, rgb(183 132 162 / 90%) 0, rgb(183 132 162 / 48%) 28%, rgb(22 63 63 / 0%) 68%);
     filter: blur(12px);
     height: min(82vw, 1050px);
     left: 50%;
@@ -950,8 +854,7 @@ h3 {
 }
 
 .showcase-image .projects-word-map,
-.showcase-image .cv-journey,
-.showcase-image .misc-patchwork {
+.showcase-image .cv-journey {
     background: var(--background);
     object-fit: contain;
 }
@@ -1235,9 +1138,9 @@ h3 {
 
 .pdf-card {
     background: var(--paper);
-    border: 1px solid rgba(22, 63, 63, 0.22);
+    border: 1px solid rgb(22 63 63 / 22%);
     border-radius: 1rem;
-    box-shadow: 0 1.6rem 4.5rem rgba(32, 39, 37, 0.12);
+    box-shadow: 0 1.6rem 4.5rem rgb(32 39 37 / 12%);
     margin: clamp(3rem, 7vw, 5rem) auto;
     max-width: var(--content);
     overflow: hidden;
@@ -1262,76 +1165,30 @@ h3 {
 }
 
 .cv-intro {
-    align-items: start;
-    display: grid;
-    gap: clamp(2rem, 6vw, 6rem);
-    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
     margin: clamp(3.5rem, 8vw, 7rem) auto;
     max-width: var(--content);
     width: calc(100% - 3rem);
 }
 
 .cv-intro-copy {
+    margin: 0 auto;
     max-width: 650px;
+    text-align: center;
 }
 
 .cv-intro-copy > p {
     color: var(--muted);
 }
 
-.cv-details {
-    margin-top: 0;
-}
-
-.cv-details > div {
-    border-top: 1px solid var(--line);
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 5rem 1fr;
-    padding: 0.9rem 0;
-}
-
-.cv-details dt {
-    color: var(--muted);
-    font-size: 0.7rem;
-    font-weight: 800;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-}
-
-.cv-details dd {
-    font-family: var(--display);
-}
-
 .pdf-card-header {
     align-items: center;
     background:
-        linear-gradient(135deg, rgba(183, 132, 162, 0.1), transparent 42%),
+        linear-gradient(135deg, rgb(183 132 162 / 10%), transparent 42%),
         var(--paper);
     display: flex;
-    gap: 2.5rem;
-    justify-content: space-between;
+    justify-content: flex-end;
     min-height: 7.5rem;
     padding: 1.8rem clamp(1.25rem, 3vw, 2.25rem) 1.55rem;
-}
-
-.pdf-card-header > div:first-child {
-    border-left: 3px solid var(--plum);
-    padding-left: 1rem;
-}
-
-.pdf-card-header h2 {
-    font-size: clamp(1.6rem, 2.8vw, 2.35rem);
-    margin: 0;
-}
-
-.pdf-card-type {
-    color: var(--accent);
-    font-size: 0.7rem;
-    font-weight: 800;
-    letter-spacing: 0.14em;
-    margin: 0 0 0.35rem;
-    text-transform: uppercase;
 }
 
 .pdf-card-actions {
@@ -1375,19 +1232,19 @@ h3 {
 
 .pdf-viewer {
     background:
-        radial-gradient(circle at 15% 0, rgba(183, 132, 162, 0.2), transparent 34%),
+        radial-gradient(circle at 15% 0, rgb(183 132 162 / 20%), transparent 34%),
         var(--teal);
-    border-top: 1px solid rgba(22, 63, 63, 0.3);
+    border-top: 1px solid rgb(22 63 63 / 30%);
     padding: clamp(0.65rem, 1.5vw, 1.1rem);
     position: relative;
 }
 
 .pdf-viewer embed,
 .pdf-viewer object {
-    background: #ffffff;
-    border: 1px solid rgba(243, 239, 230, 0.24);
+    background: #fff;
+    border: 1px solid rgb(243 239 230 / 24%);
     border-radius: 0.45rem;
-    box-shadow: 0 0.8rem 2.2rem rgba(8, 28, 28, 0.3);
+    box-shadow: 0 0.8rem 2.2rem rgb(8 28 28 / 30%);
     display: block;
     height: clamp(680px, 82svh, 940px);
     width: 100%;
@@ -1405,19 +1262,6 @@ h3 {
     margin: 0;
     padding: 2rem;
     text-align: center;
-}
-
-.afterword {
-    color: var(--muted);
-    font-style: italic;
-    margin: 1.5rem auto;
-    max-width: 1100px;
-    text-align: right;
-    width: calc(100% - 3rem);
-}
-
-.afterword p {
-    font-size: 0.85rem;
 }
 
 .academics {
@@ -1509,7 +1353,7 @@ h3 {
 }
 
 .academic-card li {
-    border-top: 1px solid rgba(101, 112, 107, 0.32);
+    border-top: 1px solid rgb(101 112 107 / 32%);
     font-size: 0.78rem;
     line-height: 1.45;
     padding: 0.45rem 0;
@@ -1604,7 +1448,7 @@ h3 {
 .diveMarker span {
     border: 2px solid var(--on-dark);
     border-radius: 50%;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 1px 4px rgb(0 0 0 / 35%);
     display: block;
     height: 24px;
     width: 24px;
@@ -1807,14 +1651,14 @@ h3 {
     }
 }
 
-@media (max-width: 1100px) {
+@media (width <= 1100px) {
     .academic-grid-edinburgh,
     .academic-grid-single {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-@media (max-width: 760px) {
+@media (width <= 760px) {
     .academic-grid {
         grid-template-columns: 1fr;
     }
@@ -1833,25 +1677,8 @@ h3 {
         width: 100%;
     }
 
-    .cv-intro-copy {
-        text-align: left;
-    }
-
-    .cv-intro {
-        grid-template-columns: 1fr;
-    }
-
-    .misc-grid {
-        grid-template-columns: 1fr;
-    }
-
     .reading-columns {
         grid-template-columns: 1fr;
-    }
-
-    .misc-card + .misc-card {
-        border-left: 0;
-        border-top: 1px solid var(--line);
     }
 
     .header-inner {
@@ -1992,7 +1819,7 @@ h3 {
     }
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
     .header-inner {
         display: block;
     }
@@ -2015,7 +1842,6 @@ h3 {
     .project-list,
     .cv-intro,
     .pdf-card,
-    .afterword,
     .academics,
     .map-section,
     .mapPanel,
@@ -2037,10 +1863,6 @@ h3 {
 
     .pdf-card-header {
         padding: 1.55rem 1.2rem 1.25rem;
-    }
-
-    .pdf-card-header > div:first-child {
-        padding-left: 0.8rem;
     }
 
     .pdf-viewer {
